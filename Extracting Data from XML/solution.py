@@ -2,9 +2,8 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 # url = input('Enter location: ')
-url = ''
-if len(url) < 1 : 
-    url = 'http://py4e-data.dr-chuck.net/comments_42.xml'
+url = 'http://py4e-data.dr-chuck.net/comments_42.xml' # sample
+url = 'http://py4e-data.dr-chuck.net/comments_2003852.xml' # actual
 
 print('Retrieving', url)
 uh = urllib.request.urlopen(url)
